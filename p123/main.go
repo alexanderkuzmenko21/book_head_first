@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 func functionA(a int, b int) {
 	fmt.Println(a + b)
@@ -8,6 +11,7 @@ func functionA(a int, b int) {
 
 func functionB(a int, b int) {
 	fmt.Println(a * b)
+	fmt.Println(reflect.TypeOf(a))
 }
 
 func functionC(a bool) {
